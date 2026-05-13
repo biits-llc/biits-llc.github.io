@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>BIITS - Business Investments and Information Technology Services</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+  body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    background: #f4f7fa;
+    color: #233;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  header {
+    background: linear-gradient(120deg, #2461af 50%, #38ad7c 100%);
+    color: #fff;
+    padding: 0 16px;
+    box-shadow: 0 2px 8px #0002;
+  }
+  .container {
+    max-width: 820px;
+    margin: 36px auto 28px;
+    padding: 32px 24px;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 32px #1248a615;
+    text-align: center;
+  }
+  .logo {
+    width: 84px;
+    height: 84px;
+    object-fit: contain;
+    border-radius: 16px;
+    background: #eaeaea;
+    margin-bottom: 18px;
+    margin-top: -60px;
+    box-shadow: 0 2px 12px #2561af33;
+  }
+  h1 { font-size: 2.2em; margin-bottom: 0.5em; }
+  h2 { color: #239861; font-weight: 500; margin: 0; }
+  main p {
+    font-size: 1.22em;
+    line-height: 1.7;
+    max-width: 580px;
+    margin: 1.6em auto;
+  }
+  footer {
+    text-align: center;
+    padding: 26px 6px 20px 6px;
+    color: #778;
+    background: #f9fbfe;
+    font-size: 1.07em;
+    margin-top: auto;
+    border-top: 1px solid #eaecef;
+  }
+  .footer-link {
+    color: #2173b7; text-decoration: none; margin-left: 10px; font-weight: 500;
+  }
+  /* Modal styles */
+  .modal-bg {
+    z-index:99; display:none; position: fixed; inset: 0;
+    background: #11223390;
+    justify-content: center; align-items: center;
+  }
+  .modal-content {
+    background: #fff; border-radius: 12px; max-width: 95vw; width: 400px;
+    padding: 28px 30px 22px 30px; text-align: left; box-shadow: 0 8px 32px #28915537;
+    position: relative;
+  }
+  .modal-content h2 { color: #2461af; font-size: 1.47em; margin-top: 0 }
+  .close { position: absolute; right: 16px; top: 8px; font-size: 1.8em; cursor:pointer; color: #25619a; }
+  @media (max-width:700px) {
+    .container { border-radius: 0; padding: 12vw 3vw; margin: 24px 2vw 15vw 2vw;}
+    .logo {margin-top:-34px;}
+  }
+  </style>
+</head>
+<body>
+  <header>
+    <div style="max-width:900px; margin:0 auto; display:flex; align-items:center; gap:18px; padding: 12px 0;">
+      <img src="logo.png" alt="BIITS Logo" class="logo">
+      <div style="text-align:left">
+        <div style="font-weight:700; font-size:1.3em; margin-bottom:2px;">BIITS LLC</div>
+        <div style="font-size:1.05em;">Business Investments and Information Technology Services</div>
+      </div>
+    </div>
+  </header>
+  <main class="container">
+    <h1>Custom AI Solutions & Software Development</h1>
+    <h2>Empowering your business with intelligent technology</h2>
+    <p>
+      BIITS LLC specializes in building innovative,<br>
+      tailor-made software for clients in all industries.<br>
+      We harness the power of modern Artificial Intelligence to solve business challenges, improve efficiency and unlock new growth.
+    </p>
+  </main>
+  <footer>
+    &copy; 2026 BIITS LLC.
+    <a class="footer-link" href="#" onclick="showJobs(event)">Jobs</a>
+  </footer>
+  <!-- Jobs modal -->
+  <div class="modal-bg" id="jobs-modal-bg">
+    <div class="modal-content">
+      <span class="close" onclick="closeJobs()">&times;</span>
+      <h2>Careers at BIITS: AI Software Tester (Remote)</h2>
+      <ul>
+        <li><strong>Position:</strong> AI Software Tester</li>
+        <li><strong>Type:</strong> Remote, Flexible</li>
+        <li><strong>Description:</strong> Test and validate AI-powered software. Collaborate with our team to ensure quality and reliability in deliverables.</li>
+        <li><strong>Requirements:</strong>
+          <ul>
+            <li>Experience in AI or software testing</li>
+            <li>Familiarity with automation frameworks</li>
+            <li>Analytical mindset & attention to detail</li>
+          </ul>
+        </li>
+        <li><strong>How to apply:</strong> Please send your resume/CV to <em>jobs@biits-llc.com</em></li>
+      </ul>
+    </div>
+  </div>
+  <script>
+    function showJobs(e) {
+      e.preventDefault();
+      document.getElementById('jobs-modal-bg').style.display = 'flex';
+    }
+    function closeJobs() {
+      document.getElementById('jobs-modal-bg').style.display = 'none';
+    }
+    window.onclick = function(event) {
+      const modal = document.getElementById('jobs-modal-bg');
+      if(event.target === modal) closeJobs();
+    }
+  </script>
+</body>
+</html>
