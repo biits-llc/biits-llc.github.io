@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Careers — BIITS LLC</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --blue: #1a4fa0;
+      --blue-light: #2461c4;
+      --green: #1d9e6b;
+      --green-light: #25b87d;
+      --text: #1a2233;
+      --muted: #5a6a7e;
+      --bg: #f5f7fb;
+      --white: #ffffff;
+      --border: #e2e8f0;
+    }
+
+    body {
+      font-family: 'Segoe UI', system-ui, -apple-system, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+    }
+
+    /* Top bar */
+    .topbar {
+      background: var(--white);
+      border-bottom: 1px solid var(--border);
+      padding: 14px 32px;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .topbar img {
+      width: 38px;
+      height: 38px;
+      border-radius: 8px;
+      object-fit: contain;
+      background: var(--bg);
+    }
+
+    .topbar-name {
+      font-weight: 700;
+      font-size: 1rem;
+      color: var(--blue);
+      letter-spacing: 0.04em;
+    }
+
+    .topbar a.back {
+      margin-left: auto;
+      font-size: 0.88rem;
+      color: var(--blue-light);
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .topbar a.back:hover { color: var(--green); }
+
+    /* Page layout */
+    .page {
+      max-width: 780px;
+      margin: 52px auto 80px;
+      padding: 0 20px;
+    }
+
+    .page-label {
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--green);
+      margin-bottom: 10px;
+    }
+
+    .page-title {
+      font-size: 2rem;
+      font-weight: 800;
+      color: var(--text);
+      line-height: 1.2;
+      margin-bottom: 18px;
+    }
+
+    .meta-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 36px;
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 5px 14px;
+      border-radius: 20px;
+      font-size: 0.82rem;
+      font-weight: 600;
+    }
+
+    .badge-blue { background: #dce8fa; color: var(--blue); }
+    .badge-green { background: #d4f2e7; color: #167050; }
+    .badge-gray { background: #eaecf0; color: #4a5568; }
+
+    .divider {
+      width: 100%;
+      height: 1px;
+      background: var(--border);
+      margin: 32px 0;
+    }
+
+    .section-title {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--blue);
+      margin-bottom: 12px;
+      padding-bottom: 6px;
+      border-bottom: 2px solid #dce8fa;
+    }
+
+    p {
+      font-size: 0.97rem;
+      line-height: 1.8;
+      color: var(--muted);
+      margin-bottom: 16px;
+    }
+
+    ul {
+      padding-left: 22px;
+      margin-bottom: 20px;
+    }
+
+    li {
+      font-size: 0.97rem;
+      line-height: 1.75;
+      color: var(--muted);
+      margin-bottom: 4px;
+    }
+
+    li strong { color: var(--text); }
+
+    /* Highlight box */
+    .highlight-box {
+      background: linear-gradient(135deg, #f0f5ff 0%, #e8f8f2 100%);
+      border-left: 4px solid var(--blue-light);
+      border-radius: 0 10px 10px 0;
+      padding: 20px 24px;
+      margin-bottom: 28px;
+    }
+
+    .highlight-box p {
+      margin: 0;
+      color: var(--text);
+      font-size: 1rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      border-top: 1px solid var(--border);
+      background: var(--white);
+      font-size: 0.88rem;
+      color: var(--muted);
+    }
+
+    footer a {
+      color: var(--blue-light);
+      text-decoration: none;
+      font-weight: 600;
+      margin-left: 10px;
+    }
+
+    @media (max-width: 600px) {
+      .page { margin-top: 32px; }
+      .page-title { font-size: 1.5rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="topbar">
+    <img src="logo.png" alt="BIITS LLC Logo">
+    <span class="topbar-name">BIITS LLC</span>
+    <a class="back" href="index.html">&#8592; Back to Home</a>
+  </div>
+
+  <div class="page">
+
+    <p class="page-label">Open Position</p>
+    <h1 class="page-title">AI-Assisted Software Quality Engineer</h1>
+
+    <div class="meta-row">
+      <span class="badge badge-blue">Remote</span>
+      <span class="badge badge-green">Full-Time</span>
+      <span class="badge badge-gray">Engineering</span>
+      <span class="badge badge-gray">Posted May 2026</span>
+    </div>
+
+    <div class="highlight-box">
+      <p>
+        BIITS LLC is growing its engineering team and looking for a careful, systematic collaborator who is
+        fluent with everyday computers and curious about AI-assisted workflows. The work is structured,
+        well-specified, and designed to be approachable: if you can follow precise instructions, operate a
+        modern browser and desktop environment, and describe what you see with accuracy, you can contribute
+        meaningfully on day one. No prior software-industry résumé is expected.
+      </p>
+    </div>
+
+    <div class="section-title">About the Role</div>
+    <p>
+      As an AI-Assisted Software Quality Engineer at BIITS LLC, you will execute defined test plans,
+      exercise applications through the same interfaces our clients use, and record outcomes in plain,
+      traceable language. You will work alongside a small engineering team so that releases ship with
+      predictable behavior and regressions are caught before they reach production.
+    </p>
+    <p>
+      You will routinely use AI tools — conversational assistants, guided test suggestions, and similar
+      surfaces — as part of a supervised workflow: the emphasis is on disciplined judgment, not on
+      memorizing frameworks. We care that you can steer the tools, cross-check their output, and stop
+      when something does not match the specification.
+    </p>
+
+    <div class="divider"></div>
+
+    <div class="section-title">Key Responsibilities</div>
+    <ul>
+      <li>Execute written test scripts and checklists against web applications and documented API behaviors, confirming each step against expected outcomes.</li>
+      <li>Use AI-assisted tools (for example, conversational coding or testing assistants) under team guidance to draft or refine test ideas, then validate results manually.</li>
+      <li>Operate automated test runners when provided — launching suites, reading pass/fail output, and capturing logs or screenshots for handoff.</li>
+      <li>Perform structured walkthroughs of new features: linear paths, boundary inputs, and deliberate retries to surface inconsistent states.</li>
+      <li>Open, update, and resolve tickets that describe defects with reproducible steps, environmental notes, and unambiguous language.</li>
+      <li>Attend brief async or live checkpoints with developers to confirm whether an observation is a defect, a specification ambiguity, or intended behavior.</li>
+      <li>Sanity-check AI-generated or AI-augmented product behavior against written acceptance criteria, including obvious failure modes (empty states, timeouts, malformed input).</li>
+      <li>Keep internal runbooks and test notes legible so the next person can repeat your sequence without interpretation.</li>
+      <li>When requested, witness release demonstrations and record a concise sign-off checklist.</li>
+      <li>Flag tooling friction or unclear instructions so the team can tighten the process — incremental refinement is part of the role.</li>
+    </ul>
+
+    <div class="divider"></div>
+
+    <div class="section-title">Required Qualifications</div>
+    <ul>
+      <li><strong>Operational fluency</strong> with contemporary desktop and browser-based computing: multi-tab research, downloads, bookmarks, and password hygiene without frequent procedural support.</li>
+      <li><strong>Instruction fidelity</strong> — you can translate written specifications, annotated screenshots, and stepwise procedures into exact sequences of clicks and keystrokes, and you notice when a step cannot be completed as written.</li>
+      <li><strong>Discriminating observation</strong> — you attend to typography, layout shifts, error strings, loading states, and subtle copy differences the way a careful editor reads galley proofs.</li>
+      <li><strong>Composed written articulation</strong> in English: complete sentences, neutral tone, and reproducible steps so another person can follow your account without guessing your intent.</li>
+      <li><strong>Structured digital hygiene</strong> — organized folders, consistent file naming, and the habit of verifying URLs, accounts, and environment indicators before concluding a task.</li>
+      <li><strong>Measured engagement with AI interfaces</strong> — you can issue bounded prompts, compare outputs against a source of truth, and resist treating probabilistic text as authoritative without cross-check.</li>
+      <li><strong>Async discipline</strong> in a remote setting: responsive messaging, predictable availability windows, and the patience to wait for clarifications instead of improvising silently.</li>
+    </ul>
+
+    <div class="section-title">Preferred Qualifications</div>
+    <ul>
+      <li>Intellectual curiosity about how large language models behave when prompts edge toward ambiguity or contradiction.</li>
+      <li>Comfort reading lightly technical prose (release notes, JSON fragments in documentation, simple HTTP status explanations) even if you do not author that material yourself.</li>
+      <li>Familiarity with collaborative surfaces such as shared documents, comment threads, or basic issue trackers — school projects and personal use count.</li>
+      <li>Keyboard fluency and low-friction typing; you are not slowed down when asked to transcribe observations in real time.</li>
+      <li>An eye for inclusive design basics — contrast legibility, focus order, and whether controls remain operable without a mouse.</li>
+      <li>Calm when context-switching between a small number of parallel assignments, each with its own checklist.</li>
+    </ul>
+
+    <div class="divider"></div>
+
+    <div class="section-title">What We Offer</div>
+    <ul>
+      <li>Fully remote position with flexible scheduling built around outcomes, not hours.</li>
+      <li>Direct access to leadership — your work and ideas will be seen and acted on.</li>
+      <li>A fast-moving environment where you will work on a variety of real-world client software projects.</li>
+      <li>Opportunity to help refine QA checklists and habits as the firm grows.</li>
+      <li>Competitive compensation.</li>
+    </ul>
+
+  </div>
+
+  <footer>
+    &copy; 2026 BIITS LLC. All rights reserved.
+    <a href="index.html">Home</a>
+  </footer>
+
+</body>
+</html>
